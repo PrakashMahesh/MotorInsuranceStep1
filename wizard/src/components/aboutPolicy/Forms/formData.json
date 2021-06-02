@@ -1,0 +1,780 @@
+[
+    {
+        "step": "STEP 3/4",
+        "page_label": "About Policy",
+        "page_description": "Please Select the Policies you want for coverage",
+        "fields":[ {
+                "layout": "row",
+                "fields": [
+                    {
+                        "field_id": "Policy Coverages",
+                        "field_label": "Policy Coverages",
+                       "field_type": "onlytext",
+                        "field_value": ""
+                        
+             }]},
+             {
+                "layout": "",
+                "fields":[
+                    {
+                        "field_id": "coverage_type",
+                        "field_label": "We can cover your vehicle in the event of breakdown and get you back on the road with our roadside recovery service. Get by paying only £100 extra",
+                        "field_mandatory": "no",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "errors": "",
+                        "field_options": [
+                            
+                            {
+                                "option_id": "Breakdownid",
+                                "option_label": "Breakdown",
+                                "option_value": "Breakdown"
+                            },
+                            {
+                                "option_id": "Electrical Accessories",
+                                "option_label": "Electrical Accessories",
+                                "option_value": "Electrical Accessories"
+                            },
+                            
+                            {
+                                "option_id": "Non-electrical accessories",
+                                "option_label": "Non-electrical accessories",
+                                "option_value": "Non-electrical accessories"
+                            },
+                            {
+                                "option_id": "CNG fitment",
+                                "option_label": "CNG fitment",
+                                "option_value": "CNG fitment"
+                            },
+                            {
+                                "option_id": "Personal Accident Cover",
+                                "option_label": "Personal Accident Cover",
+                                "option_value": "Personal Accident Cover"
+                            },
+                            {
+                                "option_id": "Accident Cover for named passenger",
+                                "option_label": "Accident Cover for named passenger",
+                                "option_value": "Accident Cover for named passenger"
+                            },
+                            {
+                                "option_id": "Accident Cover for Paid passenger",
+                                "option_label": "Accident Cover for Paid passenger",
+                                "option_value": "Accident Cover for Paid passenger"
+                            },
+                            {
+                                "option_id": "Policy Name 8",
+                                "option_label": "Policy Name 8 ",
+                                "option_value": "Policy Name 8"
+                            },
+                            {
+                                "option_id": "Policy Name 9",
+                                "option_label": "Policy Name 9  ",
+                                "option_value": "Policy Name 9"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "layout": "row",
+                "fields": [
+                    {
+                        "field_id": "Other Policy Details",
+                        "field_label": "Other Policy Details",
+                       "field_type": "onlytext",
+                        "field_value": ""
+                        
+             }]},
+           {
+                "layout": "row",
+                "fields": [
+                    {
+                        "field_id": "paymentschedule",
+                        "field_label": "Select your payments schedule for the policy?",
+                        "field_mandatory": "yes",
+                        "field_type": "select",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_label": "Annual"
+                            },
+                            {
+                                "option_label": "Monthly"
+                            }
+                        ]
+                    } ,
+                    {
+                        "field_id": "coverdate",
+                        "field_label": "When would you like the cover to begin",
+                        "field_mandatory": "no",
+                        "field_type": "date",
+                        "field_value": "",
+                        "errors": ""
+                    }
+                    
+                ]
+            },
+           {
+                "layout": "row",
+                "fields": [
+                    {
+                        "field_id": "typeofquote",
+                        "field_label": "What type of quote would you want?",
+                        "field_mandatory": "yes",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "Renewal Existing Policyid",
+                                "option_label": "Renewal Existing Policy",
+                                "option_value": "Renewal Existing Policy"
+                            },
+                            {
+                                "option_id": "New insurance policyid",
+                                "option_label": "New insurance policy",
+                                "option_value": "New insurance policy"
+                            }
+                         ] }
+                   ,
+                    {
+                        "field_id": "covertype",
+                        "field_label": "What type of cover would you want?",
+                        "field_mandatory": "no",
+                        "field_type": "select",
+                        "field_value": "",
+                        "errors": "",
+                        "field_options": [
+                            {
+                                "option_label": "Comprehensive"
+                            },
+                            {
+                                "option_label": "Thirdparty,Fire and theft"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "layout": "row",
+                "fields": [
+         
+  
+                     {
+                        "field_id": "car_used",
+                        "field_label": "What is the Car used for?",
+                        "field_mandatory": "yes",
+                        "field_type": "select",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_label": "Social, Domestic & Pleasure"
+                            },
+                            {
+                                "option_label": "Social, Domestic & Commuting"
+                            }
+                        ]
+                    } 
+                    ,{
+                        "field_id": "total_annual_mileage_ofcar",
+                        "field_label": "What is the total annual mileage of the Car?",
+                        "field_mandatory": "yes",
+                        "field_type": "select",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_label": "up to 4,000"
+                            },
+                            {
+                                "option_label": "up to 5,000 and so on till up to 50,000"
+                            }]
+                    }  
+                   
+                   
+                    
+                ]
+            },
+            {
+                "layout": "",
+                "fields":[
+                    {
+                        "field_id": "car_location",
+                        "field_label": "Select where the Car is kept during the day (for multiple locations, select where it is kept for the longest duration)",
+                        "field_mandatory": "yes",
+                        "field_type": "select",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_label": "At home"
+                            },
+                            {
+                                "option_label": "Work place car park"
+                            },
+                            {
+                                "option_label": "Open public park"
+                            },
+                            {
+                                "option_label": "Secure public park"
+                            }
+                               
+                            
+                            
+                        ]
+                    }    
+                ]
+            },
+            {
+                "layout": "",
+                "fields":[
+                    {
+                        "field_id": "car_overnight",
+                        "field_label": "Select where the Car is kept overnight",
+                        "field_mandatory": "no",
+                        "field_type": "select",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_label": "Garagged"
+                            },
+                            {
+                                "option_label": "Road"
+                            },
+                            {
+                                "option_label": "Driveway"
+                            },
+                            {
+                                "option_label": "Locked underground parking area"
+                            }
+
+                            
+                        ]
+                    }    
+                ]
+            }
+              ,
+             {
+                "layout": "row",
+                   "fields": [
+                       {
+                        "field_id": "policy_holder_anothervehicle",
+                        "field_label": "Does the policy holder own or use another vehicle?",
+                        "field_mandatory": "no",
+                        "field_type": "select",
+                        "field_value": "",
+                        "errors": "",
+                        "field_options": [
+                            {
+                                
+                                "option_label": "Yes"
+                               
+                            },
+                            {
+                                
+                                "option_label": "No"
+                               
+                            }
+                        ]
+                    },
+                     {
+                        "field_id": "Any_existing_policy",
+                        "field_label": "Was the existing policy with us?",
+                        "field_mandatory": "yes",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "policy1",
+                                "option_label": "Yes",
+                                "option_value": "Yes"
+                            },
+                            {
+                                "option_id": "policy2",
+                                "option_label": "No",
+                                "option_value": "No"
+                            }
+  ] }
+                    ] },
+             {
+                "layout": "row",
+                "fields": [
+                    {
+                        "field_id": "Personal_Accident_cover",
+                        "field_label": "Do you want to add Personal Accident Cover for named passenger(s)",
+                        "field_mandatory": "yes",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "PAcoveryes",
+                                "option_label": "Yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "PAcoverno",
+                                "option_label": "No",
+                                "option_value":"no"
+                            }
+                         ] 
+             }]} ,
+
+             {
+                "layout": "row",
+                "fields": [
+                    {
+                        "field_id": "voluntary_pay",
+                        "field_label": "Select the voluntary excess the policy holder wants to pay",
+                        "field_mandatory": "yes",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "voluntarypayyes",
+                                "option_label": "Yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "voluntarypayno",
+                                "option_label": "No",
+                                "option_value": "no"
+                            }
+                         ] 
+             },
+             {
+                        "field_id": "PA_cover_un-named_passengers",
+                        "field_label": "Do you want to add Personal Accident Cover for un-named passenger(s)",
+                        "field_mandatory": "yes",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "unnamedpassengeryes",
+                                "option_label": "Yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "unnamedpassengerno",
+                                "option_label": "No",
+                                "option_value":"no"
+                            }
+                         ] 
+             }
+             ]} , 
+             {
+                "layout": "row",
+                "fields": [
+                    {
+                        "field_id": "no_of_un-named_passenger(s)",
+                        "field_label": "Enter the number of un-named passenger(s) you want to add",
+                        "field_mandatory": "yes",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "no1",
+                                "option_label": "1",
+                                "option_value": "1"
+                            },
+                            {
+                                "option_id": "no2",
+                                "option_label": "2",
+                                "option_value": "2"
+                            },
+                            {
+                                "option_id": "no3",
+                                "option_label": "3",
+                                "option_value": "3"
+                            },
+                            {
+                                "option_id": "no4",
+                                "option_label": "4",
+                                "option_value": "4"
+                            },
+                            {
+                                "option_id": "no5",
+                                "option_label": "5",
+                                "option_value": "5"
+                            },
+                            {
+                                "option_id": "no6",
+                                "option_label": "6",
+                                "option_value": "6"
+                            }
+                         ] },
+                         {
+                        "field_id": "sum_of_unnamed_passenger",
+                        "field_label": "Enter the sum you want to insure for each un-named passenger",
+                        "field_mandatory": "no",
+                        "field_placeholder": "",
+                        "field_type": "text",
+                        "field_value": ""
+                    } 
+                   
+                ]
+            },
+            
+           
+            
+          
+             {
+                "layout": "row",
+                "fields":[
+
+                    {
+                        "field_id": "policy_holder_have_any_no_claim_bonus",
+                        "field_label": "Does the policy holder have any no claim bonus (NCB)?",
+                        "field_mandatory": "yes",
+                        "field_placeholder": "",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "policy_holder_yes_claim_bonus",
+                                "option_label": "yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "policy_holder_no_claim_bonus",
+                                "option_label": "no",
+                                "option_value": "no"
+                            }
+                        ],
+                        "legal_owner_fields":[
+                          
+                            {
+                                "field_id": "years_of_no-claim",
+                                "field_label": "How many years of no-claim bonus does the policy holder have?",
+                                "field_mandatory": "yes",
+                                "field_type": "select",
+                                "field_value": "",
+                                "field_options": [
+                                    {
+                                        "option_label": "0 year"
+                                    },
+                                    {
+                                        "option_label": "1 year"
+                                    },
+                                    {
+                                        "option_label": "2 year"
+                                    },
+                                    {
+                                        "option_label": "3 year"
+                                    },
+                                    {
+                                        "option_label": "4 year"
+                                    },
+                                    {
+                                        "option_label": "5 year"
+                                    },
+                                    {
+                                        "option_label": "6 year"
+                                    },
+                                    {
+                                        "option_label": "7 year"
+                                    },
+                                    {
+                                        "option_label": "8 year"
+                                    },
+                                    {
+                                        "option_label": "9 year"
+                                    },
+                                    {
+                                        "option_label": "10 year"
+                                    },
+                                    {
+                                        "option_label": "11 year"
+                                    },
+                                    {
+                                        "option_label": "12 year"
+                                    },
+                                    {
+                                        "option_label": "13 year"
+                                    },
+                                    {
+                                        "option_label": "14 year"
+                                    },
+                                    {
+                                        "option_label": "15 year"
+                                    },
+                                    {
+                                        "option_label": "16 year"
+                                    },
+                                    {
+                                        "option_label": "17 year"
+                                    },
+                                    {
+                                        "option_label": "18 year"
+                                    },
+                                    {
+                                        "option_label": "19 year"
+                                    },
+                                    {
+                                        "option_label": "20 year"
+                                    }
+
+                                ]
+                            },
+                            {
+                                "field_id": "protect_no_claim bonus",
+                                "field_label": "Is the policy holder's no-claim bonus currently protected",
+                                "field_mandatory": "yes",
+                                "field_type": "radio",
+                                "field_value": "",
+                                "field_options": [
+                                    {"option_id": "yes_noclaim_bonus",
+                                "option_label": "yes",
+                                "option_value": "yes"
+                                       
+                                    },
+                                    {
+                                        "option_id": "No_noclaim_bonus",
+                                        "option_label": "no",
+                                         "option_value": "no"
+                                    }
+                                ],
+                           
+                             "legal_owner_fields1":[  {
+                                "field_id": "policy_holder_protect_his_no-claim bonus",
+                                "field_label": "Would the policy holder like to protect his no-claim bonus",
+                                "field_mandatory": "yes",
+                                "field_type": "radio",
+                                "field_value": "",
+                                "field_options": [
+                                    {"option_id": "protectyes_noclaim_bonus",
+                                "option_label": "yes",
+                                "option_value": "yes"
+                                       
+                                    },
+                                    {
+                                        "option_id": "protectNo_noclaim_bonus",
+                                        "option_label": "no",
+                                         "option_value": "no"
+                                    }
+                                ]
+                            }]}  
+                        ]
+                    }   
+                ]
+             },
+              {
+                "layout": "row",
+                "fields":[
+
+                    {
+                        "field_id": "add_cover_for_Electrical_accessories",
+                        "field_label": "Do you want to add cover for Electrical accessories?",
+                        "field_mandatory": "yes",
+                        "field_placeholder": "",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "addcoveryes",
+                                "option_label": "yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "addcoverno",
+                                "option_label": "no",
+                                "option_value": "no"
+                            }
+                        ],
+                        "registered_keeper_fields":[
+                          
+                           {
+                        "field_id": "current_no_claim_bonus",
+                        "field_label": "Enter value of Electrical Accessories",
+                        "field_mandatory": "yes",
+                       "field_type": "text",
+                        "field_value": ""
+                        
+             },
+                    {
+                        "field_id": "Personal_Accident_covervalue",
+                        "field_label": "Insured value of electrical accessories",
+                        "field_mandatory": "yes",
+                        "field_type": "text",
+                        "field_value": ""
+                    
+             },
+              {
+                        "field_id": "Personal_Accident_coveridv",
+                        "field_label": "CALCULATE IDV",
+                        "field_mandatory": "yes",
+                        "field_type": "button",
+                        "field_value": ""
+                    
+             }
+                        ]
+                    }   
+                ]
+              },
+              {
+                "layout": "row",
+                "fields":[
+
+                    {
+                        "field_id": "add_cover_for_non-Electrical_accessories",
+                        "field_label": "Do you want to add cover for non-Electrical accessories?",
+                        "field_mandatory": "yes",
+                        "field_placeholder": "",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "addcoverelectricalyes",
+                                "option_label": "yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "addcoverelectricalno",
+                                "option_label": "no",
+                                "option_value": "no"
+                            }
+                        ],
+                        "dynamic_fields":[
+                          
+                        {
+                        "field_id": "Non-electrical accessoriesvalue",
+                        "field_label": "Enter value of Non-Electrical Accessories",
+                        "field_mandatory": "yes",
+                       "field_type": "text",
+                        "field_value": ""
+                        
+             },
+                    {
+                        "field_id": "Non-electrical_accessories_covervalue",
+                        "field_label": "Insured value of Non-electrical accessories",
+                        "field_mandatory": "yes",
+                        "field_type": "text",
+                        "field_value": ""
+                    
+             },
+              {
+                        "field_id": "Non-electrical_accessoriescoveridv",
+                        "field_label": "CALCULATE IDV",
+                        "field_mandatory": "yes",
+                        "field_type": "button",
+                        "field_value": ""
+                    
+             }
+                        ]
+                    } 
+                  
+
+                ]
+
+
+              },{
+                "layout": "row",
+                "fields":[
+                {
+                        "field_id": "PA_cover_paid_passengers",
+                        "field_label": "Do you want to add Personal Accident Cover for paid passenger(s)",
+                        "field_mandatory": "yes",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "paidpassengeryes",
+                                "option_label": "Yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "paidpassengerno",
+                                "option_label": "No",
+                                "option_value":"no"
+                            }
+                         ] ,
+   "PA_cover_paid_fields":[
+                          
+                            {
+                        "field_id": "no_of_paid_passenger(s)",
+                        "field_label": "Enter the number of paid passenger(s) you want to add",
+                        "field_mandatory": "yes",
+                        "field_type": "select",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                
+                                "option_label": "Yes"
+                                
+                            },
+                            {
+                                
+                                "option_label": "No"
+                                
+                            }
+                            
+                         ] },
+                         {
+                        "field_id": "sum_of_paid_passenger",
+                        "field_label": "Enter the sum you want to insure for each paid passenger",
+                        "field_mandatory": "no",
+                        "field_placeholder": "",
+                        "field_type": "text",
+                        "field_value": ""
+                    }
+             
+                        ]
+                    } 
+                ]
+          } ,{
+                "layout": "row",
+                "fields":[
+                {
+                        "field_id": "add_cover_for_non-CNG fitment",
+                        "field_label": "Do you want to add cover for CNG fitment?",
+                        "field_mandatory": "yes",
+                        "field_placeholder": "",
+                        "field_type": "radio",
+                        "field_value": "",
+                        "field_options": [
+                            {
+                                "option_id": "add_CNG_fitment_yes",
+                                "option_label": "yes",
+                                "option_value": "yes"
+                            },
+                            {
+                                "option_id": "add_CNG_fitment_no",
+                                "option_label": "no",
+                                "option_value": "no"
+                            }
+                        ],
+   "CNG_fitment_fields":[
+                          
+                           {
+                        "field_id": " CNG_fitment_accessoriesvalue",
+                        "field_label": "Enter value of  CNG fitment",
+                        "field_mandatory": "yes",
+                       "field_type": "text",
+                        "field_value": ""
+                        
+             },
+                    {
+                        "field_id": " CNG_fitment_covervalue",
+                        "field_label": "Insured value of  CNG fitment",
+                        "field_mandatory": "yes",
+                        "field_type": "text",
+                        "field_value": ""
+                    
+             },
+              {
+                        "field_id": " CNG_fitment_accessoriescoveridv",
+                        "field_label": "CALCULATE IDV",
+                        "field_mandatory": "yes",
+                        "field_type": "button",
+                        "field_value": ""
+                    
+             }
+                        ]
+                    } 
+                ]
+          } 
+        
+        
+        
+        
+        ]
+    
+        
+    }
+]
