@@ -1,7 +1,7 @@
 
 import React,{Component} from "react";
 import DynamicForm from '../aboutvechical/DynamicForm';
-import AboutPolicyHolder from '../aboutpolicyholder/DynamicForm';
+
 import Progressbar from "./Progressbar";
 import WizardHeader from './WizardHeader'
 // { BrowserRouter, Route } from 'react-router-dom';
@@ -11,6 +11,7 @@ import {createStore} from 'redux';
 import PageLoader from '../aboutvechical/PageLoader';
 import allReducers from '../reducers';
 import AboutPolicy from "../aboutPolicy/Forms/DynamicForm";
+import AboutPolicyHolder from "../aboutpolicyholder/DynamicForm";
 
 const store = createStore(
   allReducers,
@@ -24,8 +25,8 @@ class Wizardcheck extends Component {
                             step:0,
                             verfication:[true,false,false,false],
                             steps:[{key:0,isDone:false,isverify:true,imgsrx:require('../images/car.png').default,tickmark:require('../images/Group 171.svg').default,component:<Provider store={store}><DynamicForm handleNext={this.handleNext.bind(this)} handleBack={this.handleBack.bind(this)} /><PageLoader/></Provider>},
-                            {key:1,isDone:false,isverify:false,imgsrx:require('../images/contact.png').default,tickmark:require('../images/Group 171.svg').default,component:<AboutPolicyHolder  handleNext={this.handleNext.bind(this)} handleBack={this.handleBack.bind(this)} />},
-                            {key:2, isDone:false,isverify:false,imgsrx:require('../images/vechical.png').default,tickmark:require('../images/Group 171.svg').default,component:<AboutPolicy></AboutPolicy>},
+                            {key:1,isDone:false,isverify:false,imgsrx:require('../images/contact.png').default,tickmark:require('../images/Group 171.svg').default,component:<AboutPolicyHolder handleNext={this.handleNext.bind(this)} handleBack={this.handleBack.bind(this)}></AboutPolicyHolder> },
+                            {key:2, isDone:false,isverify:false,imgsrx:require('../images/vechical.png').default,tickmark:require('../images/Group 171.svg').default,component:<AboutPolicy handleNext={this.handleNext.bind(this)} handleBack={this.handleBack.bind(this)}></AboutPolicy>},
                             {key:3, isDone:false,isverify:false,imgsrx:require('../images/Checklist_2_.svg').default,tickmark:require('../images/Group 171.svg').default,component:"final"}]     
                         }
             this.handleNext=this.handleNext.bind(this)

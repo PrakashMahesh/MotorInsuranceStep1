@@ -1,43 +1,34 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Form, Button} from 'react-bootstrap';
-import { FormContext } from '../FormContext';
+import { AddressContext } from '../FormContext';
 import '../App.css';
-import Table from './Table';
-import CliamTable from './CliamTable';
 
-function ButtonInput({field_id, field_label, field_placeholder, field_value, field_mandatory, conviction_table_fields, errors}){
+function ButtonInput({field_id, field_label, field_placeholder, field_value, field_mandatory,  errors}){
 
-    const { handleChange } = useContext(FormContext)
-
-    const [showConvictionButton, setShowConvictionButton] = useState(true);
-    const [showConvictionTable, setShowConvictionTable] = useState(false);
-
-    useEffect(()=>{
-        const conviction_button = document.getElementById("conviction_button");
-        conviction_button.onclick = function () {
-            if (conviction_button.name == "button") {
-                setShowConvictionTable(true);
-                setShowConvictionButton(false);
-            }
-            }
-    },[])
-
-    const showButton = ()=>{
-        setShowConvictionTable(false);
-        setShowConvictionButton(true);
-    }
+    const { loadAddress } = useContext(AddressContext);
     
-    return (
-        <>
-        <Button style={{display: ( showConvictionButton ? 'block' : 'none')}} className="button-rounded" name="button" id="conviction_button" >
-            {field_label}
-        </Button>
+    
 
-        <div style={{display: ( showConvictionTable ? 'block' : 'none')}}> 
-            <Table action={showButton}/>
-            <CliamTable></CliamTable>
-        </div>
-        </>
+    useEffect(() => {
+        const postalCode =document.getElementById("Postal Code_Id");
+        const AddressLine1 =document.getElementById("Address1_Id");
+        const AddressLine2 =document.getElementById("Address2_Id");
+        
+        document.getElementById("findAddress_Id").onclick = function () {
+            if(postalCode.value && AddressLine1.value && AddressLine2.value ){
+                 loadAddress();
+        }
+    }
+
+
+       
+
+        
+      }, []);
+
+      return (
+        
+            <Button className="button-rounded" id={field_id}>{field_label}</Button>
       );
 }
 

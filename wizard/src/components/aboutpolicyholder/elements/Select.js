@@ -10,7 +10,7 @@ const Select = ({ field_id, field_label, field_placeholder, field_value, field_o
     return (
         <Form.Group>
             <Form.Label>{field_label}</Form.Label>
-            <Form.Control className="form-field" as="select" value={field_value} onChange={event => handleChange(field_id, event)}>
+            <Form.Control id={field_id}  className="form-field" as="select" value={field_value} onChange={event => handleChange(field_id, event)}>
             <option >-- Please Select --</option>
                 {field_options.length > 0 && field_options.map((option, i) =>
                     <option value={option.option_label} key={i}>{option.option_label}</option>

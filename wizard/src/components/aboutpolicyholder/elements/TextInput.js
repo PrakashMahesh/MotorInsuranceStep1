@@ -8,9 +8,9 @@ function TextInput({field_id, field_label, field_placeholder, field_value, error
     const { handleChange } = useContext(FormContext)
     
     return (
-        <Form.Group>
+        <Form.Group >
             <Form.Label>{field_label}</Form.Label>
-            <Form.Control className="form-field" placeholder={field_placeholder? field_placeholder : " "} value={field_value} onChange={event => handleChange(field_id, event)}/>
+            <Form.Control id={field_id} className="form-field" placeholder={field_placeholder? field_placeholder : " "} value={field_value} onChange={event => handleChange(field_id, event)}/>
             <span style={{color: "red"}}>{errors ? errors : ""}</span>
         </Form.Group>
       );

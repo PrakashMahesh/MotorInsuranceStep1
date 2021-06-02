@@ -4,6 +4,12 @@ body {
   background-color:#F0E6FF
   
   }
+  .form-container{
+    border-radius: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
   .WizardHeader{
     position: relative;
     width: 100%;
@@ -190,11 +196,12 @@ border-bottom-right-radius: 25px;
   }
   .wizardbody{
    
-   width: 68%;
+   width: 40%;
    height: 80%;
   
    }
 .car{
+ 
  top:13px;
 width: 25px;
 height: 25px;
@@ -202,7 +209,7 @@ margin-bottom: 15px;
 
 }
 .carimage{
-  left: 15%;
+  left: 10%;
 width: 18px;
 height: 12px;
 

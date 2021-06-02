@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Button, Row, Col } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import formJSON from './formData.json';
 import { useState, useEffect } from 'react';
 import Element from './Element';
@@ -97,7 +97,7 @@ function DynamicForm({handleNext,handleBack}) {
     newElements.fields.forEach(row => {
       row.fields.forEach(field => {
 
-      if(field.field_mandatory == "yes" && field.field_value == ""){
+      if(field.field_mandatory === "yes" && field.field_value === ""){
           field.errors = "Should not be empty";
           setElements(newElements);
           verify=false;
@@ -230,7 +230,7 @@ function DynamicForm({handleNext,handleBack}) {
 
 
       if(field.field_id === "chasis_no"){
-        if(field.field_value != ""){
+        if(field.field_value !== ""){
           if(!Number(field.field_value)){
               field.errors = "Must be a number";
           }

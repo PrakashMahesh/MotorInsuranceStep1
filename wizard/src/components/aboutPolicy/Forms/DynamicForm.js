@@ -8,7 +8,7 @@ import { FormContext } from './FormContext';
 
 
 
-function AboutPolicy() {
+function AboutPolicy({handleNext,handleBack}) {
 
   //const loading = useSelector(state => state.loading);
 
@@ -243,7 +243,7 @@ function AboutPolicy() {
     return (
       <>
       <FormContext.Provider value={{ handleChange }}>
-        <Form className="container">
+        <Form className="container form-container">
           <h3 style={{color: "#5A2F7D"}}><b>{page_label}</b></h3>
           <p style={{color: "#090909", fontSize: "16px"}}>{page_description}</p> 
 <p style={{color: '#090909', fontSize: '16px'}}>{page_title}</p>

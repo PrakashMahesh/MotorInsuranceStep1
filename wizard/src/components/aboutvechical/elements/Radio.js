@@ -13,7 +13,7 @@ function Radio({field_id, field_label, field_placeholder, field_value, field_opt
     const [yesChecked, setyesChecked] = useState(false)
     const [registeredKeeperChecked, setRegisteredKeeperChecked] = useState(false)
     const [legalOwnerChecked, setLegalOwnerChecked] = useState(false)
-    const [carModification, setCarModification] = useState(false)
+   //c const [carModification, setCarModification] = useState(false)
 
     useEffect(()=>{
 
